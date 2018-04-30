@@ -12,5 +12,11 @@ class RecipesController < ApplicationController
   end
 
   def create
+    binding.pry
+    @recipe.create(recipe_params)
+  end
+
+  def recipe_params
+    params.require(:recipe).permit(:title)
   end
 end
