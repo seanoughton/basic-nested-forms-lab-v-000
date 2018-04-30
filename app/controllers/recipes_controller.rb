@@ -10,7 +10,6 @@ class RecipesController < ApplicationController
   def new
     @recipe = Recipe.new
     @recipe.ingredients.build
-    binding.pry
   end
 
   def create
