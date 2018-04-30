@@ -2,5 +2,11 @@
 
   Title: <%= f.text_field :title %>
 
+  <%= f.fields_for :ingredients_attributes do |ingredient_attributes| %>
+    <%= addr.label :quantity %>
+    <%= addr.text_field :quantity %><br>
+  <% end %>
+
+
   <%= f.submit %>
 <% end %>
