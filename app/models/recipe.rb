@@ -2,6 +2,9 @@ class Recipe < ActiveRecord::Base
   has_many :ingredients
 
   def ingredients_attributes=(ingredients_attributes)
+    #{:name=>"pepper", :quantity=>"a lot"}
+    #this method wants a hash that looks like this
+    #Ingredient.new(ingredients_attributes)
     binding.pry
   end
 
