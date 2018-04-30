@@ -3,9 +3,14 @@
   Title: <%= f.text_field :title %>
 
   <%= f.fields_for :ingredients_attributes do |ingredient_attributes| %>
-    <%= addr.label :quantity %>
-    <%= addr.text_field :quantity %><br>
+    <%binding.pry%>
+    <%= ingredient_attributes.label :quantity %>
+    <%= ingredient_attributes.text_field :quantity %><br>
   <% end %>
+
+  <input type = "text" name="recipe[ingredients_attributes][][quantity]" id="recipe_ingredients_attributes_0_quantity">
+
+  <input type = "text" name="recipe[ingredients_attributes][][name]" id="recipe_ingredients_attributes_0_name">
 
 
   <%= f.submit %>
