@@ -10,7 +10,11 @@ class RecipesController < ApplicationController
   def new
     @recipe = Recipe.new
     @recipe.ingredients.build
+<<<<<<< HEAD
     @recipe.ingredients.build
+=======
+    binding.pry
+>>>>>>> 8c2f8540e1a49b724f4c8f22c0e5b04d8233192f
   end
 
   def create
