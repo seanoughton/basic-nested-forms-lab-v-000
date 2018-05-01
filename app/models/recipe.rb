@@ -2,6 +2,7 @@ class Recipe < ActiveRecord::Base
   has_many :ingredients
 
   accepts_nested_attributes_for :ingredients
+end
 
 =begin
   def ingredients_attributes=(ingredients_attributes)
@@ -16,4 +17,3 @@ class Recipe < ActiveRecord::Base
   end
 
 =end
-end
