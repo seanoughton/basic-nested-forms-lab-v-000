@@ -11,7 +11,6 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new
     @recipe.ingredients.build
     @recipe.ingredients.build
-    binding.pry
   end
 
   def create
