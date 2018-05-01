@@ -15,6 +15,7 @@ class RecipesController < ApplicationController
 
   def create
     @recipe = Recipe.create(recipe_params)
+    @recipe.ingredients_attributes = params[:recipe][:ingredients_attributes]
     redirect_to @recipe
   end
 
